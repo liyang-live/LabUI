@@ -90,47 +90,7 @@ namespace CIS.CoreApp
             }
 
         }
-        public static bool GetLicenseKey()
-        {
-            try
-            {
-                string strEncryptedKey = String.Empty;
-                string expiredate = String.Empty;
-                string strLicenseKey = String.Empty;
-                  string Checkdate = String.Empty;
-                  if (!string.IsNullOrEmpty(EnDec.Reg_Folder))
-                {
-                    strEncryptedKey = Interaction.GetSetting(EnDec.Reg_Folder, EnDec.Reg_Section, EnDec.cstr_LICENSE_KEY, String.Empty);
-                    expiredate = Interaction.GetSetting(EnDec.Reg_Folder, EnDec.Reg_Section, EnDec.Ngayhet, String.Empty);
-                    // --- If there is a license key stored in the registry, it will be encrypted.
-                    // --- try decrypt it
-                    string datenow = DateTime.Now.ToString("dd/MM/yyyy");
-                    Checkdate = EnDec.DecryptMD5(expiredate, EnDec.m_strLocalPassword);
-                    if (!string.IsNullOrEmpty(strEncryptedKey) && DateTime.Parse(datenow) <= DateTime.Parse(Checkdate))
-                    {
-                        strLicenseKey = EnDec.DecryptMD5(strEncryptedKey, EnDec.m_strLocalPassword);
-                        
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                
-                //else
-                //{
-                //    // todo Deal with errors
-                //}
-                //return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            
-            }
-            return true;
-        }
-      
+       
         void mnureLoad_Click(object sender, EventArgs e)
         {
             try
@@ -558,13 +518,7 @@ namespace CIS.CoreApp
         {
             try
             {
-                if (!GetLicenseKey())
-                {
-                    Utility.ShowMsg("Hệ thống đã hết hạn sử dụng, Bạn hãy liên hệ với IT để được trợ giúp ", "Thông báo");
-                    Dispose(true);
-                    return;
-
-                }
+               
                 isLoginFirstTime = false;
                 if (!globalVariables.LoginSuceess) CallLogin();
 
