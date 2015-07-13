@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnUpdateStandardData.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAZWSURBVFhH3Zd5VM5ZGMd/lrEzMyKjpEhZqlFKaJEUWcpJSUIlad8XWtCk5W0lpN6SNr2VMCnR
+        IlRjCSEiHOTIdmhmOLbJ0vjOc3/F6DDGH9WZM+8533N/9z3vuc/nuc9zv/f3ctz/4dNrINd/wiIuR82x
+        2+uxC7jYLs1poAQ3SmVlt7r4ff540fwMs3zF/+wyALGx3Ewt9/6/ldSIcP/1RTxvaYJRoAy6BEBGl3On
+        YG/r7hxD49tqXG8+jGctDzsfoEcvrhfVO81+43TcfnoBN1uO4PqbMlxtLsHjt3dgGCjdeTvQV4z7QdmG
+        OxWeY4fbf9TgcvN+1L8qQj2Nl14WoOn1dQIY2TkAVG/1yXa9H4gqI1H/tAxnn+7C+ed5qH2xh7Qb557l
+        4V5zHeYHSnU8gJQGZz1r9dBXZZfSUd2UjeNNaTj5ezpOPc7EqSc7SZmofpyBhufVmBcwouMAqN7d6VzH
+        mYcpoOJmFg41bkP53XgceZCAioeJqHqUhKqmVlU+EqL+STnmBkh0DADVezA122E3oT4OXU9G/rVwFN6I
+        QNGtKBQ3xqL07kaU3duEQ/fjaIyj+SacfpSHpZFKkFDj5pI/SH9B4l88qt/JcIqqtj0agndZYM9FAUS1
+        /sitW4u8K0HYey0Y+TdCUNAQisJbYSQCIxU00HODAHm1obDdqgrzKHksjpSDWcQYLAqXhWnYaJiEjsKy
+        yIlYGCT/jsrq81kIol+o7dH/eVShDbaf8ETSCRfsOO2O9HNeyLzgC1HdGuRc9kPulQDsuhqIvGut2kXz
+        3Hp/ZF9ag6yLq5Fx3hupNZ7YXu0G4XFnxFc6IO6wLbaUO6LwVAroNNV8AkDmEqy/RuydoHA5YkotEVtu
+        hc0VNog/tgqJJx2QfNoJKTUuSD3nhrRagrrggYyLrWLPaefdseOsK7afcYaw2hEJx+2wpcoWm45YI6bM
+        EhEHLRB5YDmyK6NB90btBwC6TAZQvQvmrRuOwFwjrN9rhOACY4QUmSDkII0lCxBaZoTQciOEHTZE+FFS
+        xXwIKg0RUWUEQZUhPdNYQTq6AIIjxhCUL4TgkCkEpWYILzZDyH4TBOUvQNBeYyQW+7UHoE7PWRw+Dh7p
+        M+CQogr7VBU4pE+EY+ZEuOZMgkfeZHj/PBWrCzThX6SNwIM6WFsyA+tKdbG+dCY/rivRRWCxDgIOTIdf
+        oRZ892nAa88UuOWqwUWkCtesyXDNnArPnToI323zCUDavEBJ+KQbwD5ZDcu3jcGKpHGw3aEAh4wf4SxS
+        4Rfy3K3Og7DFGcwaCuS3X4sfmdh3PvnT4LV3Cg/N4J12KsMuTQk228fDKlEey+Pl4JKk0x6AznsfKoFI
+        z1cMHil6cE3VIgg5WAvHYmXKBH4Bx50T20BU4U6LMxjPPep8lkxszoLyGWdT4CxlHn5VqgJWJI+DZYIc
+        LLaMxuJNMrCIGdce4H0zUBP6arr3a3FM0IJXhh4st42FZaIcvwDbDQbCFmVZOWep8EAsmItoEv/MgrKy
+        2acr8YFZ1iyJZbSjSzaPglnsSCyMlMScoCGfB2Ag4kqcgbpzzyeWMSrwyTSAdYIClsXLEog8Xxa2KINZ
+        lapIQExK/Mjm7Hu2YwzYigKzUrZmLQ3TGCkYR0jAMFQcev6D2DE8849mRA4mp2LT7apJsCx8MgywMlGZ
+        z2DpVll+UbadVkJ5PjvrpFaxuXeWLmLynaDnOwTqzj3a1B2TnUlOf4uOIDMi7y+6IVnxIOqLotl+w6gv
+        9GEvVOe3kGVjHifDA7HsPojmW4vd6TKSZFY851+seOhXvTWxy0jWgIuY7jHwnUO8FpyEGjCNkoJJlCRM
+        okfANFqK31p+pHnUvlXQ9f6+Yy6jjwkpoyVTXXq9tIqmZhNqwyRiJNVyGIzCPhLN14nMoOP1bccDMBh6
+        IZk0aWX3RtMN8nDcRhDhMjBYP7idPJJnQ9tjQOcAMAjqC3GlZdwvc/yHw26zJhaFyWGm30Dotslmozo0
+        3fp1HgCDoL74hqw7eQZttVWUGhaHjYe2dz9oevaG6QY5THPt3bkAH5mWs4ZrnzfmIYowD1WEpntf6PPH
+        r2fXALT1hY66U49fjdeT4YQpQ89HjByue9cBtPWFNJnWhbl+kjD9iff4rvtr9r4c9D7Rj0wrm4K/ov6I
+        /iqT+a/86C91Bw2yIh/ZIgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="grdPatients_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Patient_Name"&gt;&lt;Caption&gt;Tên bệnh nhân&lt;/Caption&gt;&lt;DataMember&gt;Patient_Name&lt;/DataMember&gt;&lt;Key&gt;Patient_Name&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;FilterRowComparison&gt;Contains&lt;/FilterRowComparison&gt;&lt;/Column0&gt;&lt;Column1 ID="YEAR_BIRTH"&gt;&lt;Caption&gt;Năm Sinh&lt;/Caption&gt;&lt;DataMember&gt;YEAR_BIRTH&lt;/DataMember&gt;&lt;Key&gt;YEAR_BIRTH&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="Age"&gt;&lt;Caption&gt;Tuổi&lt;/Caption&gt;&lt;DataMember&gt;Age&lt;/DataMember&gt;&lt;Key&gt;Age&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;50&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="SexName"&gt;&lt;Caption&gt;Giới Tính&lt;/Caption&gt;&lt;DataMember&gt;SexName&lt;/DataMember&gt;&lt;Key&gt;SexName&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Department_Name"&gt;&lt;Caption&gt;Khoa&lt;/Caption&gt;&lt;DataMember&gt;Department_Name&lt;/DataMember&gt;&lt;Key&gt;Department_Name&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="PID"&gt;&lt;Caption&gt;PID&lt;/Caption&gt;&lt;DataMember&gt;PID&lt;/DataMember&gt;&lt;Key&gt;PID&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;120&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="DATEUPDATE"&gt;&lt;Caption&gt;Ngày &lt;/Caption&gt;&lt;DataMember&gt;DATEUPDATE&lt;/DataMember&gt;&lt;FormatString&gt;{0:D}&lt;/FormatString&gt;&lt;Key&gt;DATEUPDATE&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;FormatMode&gt;UseStringFormat&lt;/FormatMode&gt;&lt;/Column6&gt;&lt;Column7 ID="Patient_ID"&gt;&lt;Caption&gt;Patient_ID&lt;/Caption&gt;&lt;DataMember&gt;Patient_ID&lt;/DataMember&gt;&lt;Key&gt;Patient_ID&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column7&gt;&lt;Column8 ID="Insurance_Num"&gt;&lt;Caption&gt;Số Thẻ BH&lt;/Caption&gt;&lt;DataMember&gt;Insurance_Num&lt;/DataMember&gt;&lt;Key&gt;Insurance_Num&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;/Column8&gt;&lt;Column9 ID="DOB"&gt;&lt;Caption&gt;DOB&lt;/Caption&gt;&lt;DataMember&gt;DOB&lt;/DataMember&gt;&lt;Key&gt;DOB&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;Column10 ID="IdentifyNum"&gt;&lt;Caption&gt;CMT&lt;/Caption&gt;&lt;DataMember&gt;IdentifyNum&lt;/DataMember&gt;&lt;Key&gt;IdentifyNum&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;/Column10&gt;&lt;Column11 ID="Room"&gt;&lt;Caption&gt;Buồng&lt;/Caption&gt;&lt;DataMember&gt;Room&lt;/DataMember&gt;&lt;Key&gt;Room&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;/Column11&gt;&lt;Column12 ID="Bed"&gt;&lt;Caption&gt;Giường&lt;/Caption&gt;&lt;DataMember&gt;Bed&lt;/DataMember&gt;&lt;Key&gt;Bed&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;/Column12&gt;&lt;Column13 ID="ObjectType_Name"&gt;&lt;Caption&gt;Đối Tượng&lt;/Caption&gt;&lt;DataMember&gt;ObjectType_Name&lt;/DataMember&gt;&lt;Key&gt;ObjectType_Name&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;/Column13&gt;&lt;Column14 ID="Hos_Status_Name"&gt;&lt;Caption&gt;Tình Trạng&lt;/Caption&gt;&lt;DataMember&gt;Hos_Status_Name&lt;/DataMember&gt;&lt;Key&gt;Hos_Status_Name&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;/Column14&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdTestInfo_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Barcode"&gt;&lt;Caption&gt;Barcode&lt;/Caption&gt;&lt;DataMember&gt;Barcode&lt;/DataMember&gt;&lt;Key&gt;Barcode&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;104&lt;/Width&gt;&lt;FilterRowComparison&gt;Contains&lt;/FilterRowComparison&gt;&lt;/Column0&gt;&lt;Column1 ID="TestType_Name"&gt;&lt;Caption&gt;Loại XN&lt;/Caption&gt;&lt;DataMember&gt;TestType_Name&lt;/DataMember&gt;&lt;Key&gt;TestType_Name&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;170&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="Patient_Name"&gt;&lt;Caption&gt;Tên bệnh nhân&lt;/Caption&gt;&lt;DataMember&gt;Patient_Name&lt;/DataMember&gt;&lt;Key&gt;Patient_Name&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;FilterRowComparison&gt;Contains&lt;/FilterRowComparison&gt;&lt;/Column2&gt;&lt;Column3 ID="Age"&gt;&lt;Caption&gt;Tuổi&lt;/Caption&gt;&lt;DataMember&gt;Age&lt;/DataMember&gt;&lt;Key&gt;Age&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;50&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="YEAR_BIRTH"&gt;&lt;Caption&gt;Năm Sinh&lt;/Caption&gt;&lt;DataMember&gt;YEAR_BIRTH&lt;/DataMember&gt;&lt;Key&gt;YEAR_BIRTH&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;/Column4&gt;&lt;Column5 ID="SexName"&gt;&lt;Caption&gt;Giới Tính&lt;/Caption&gt;&lt;DataMember&gt;SexName&lt;/DataMember&gt;&lt;Key&gt;SexName&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;/Column5&gt;&lt;Column6 ID="Department_Name"&gt;&lt;Caption&gt;Khoa&lt;/Caption&gt;&lt;DataMember&gt;Department_Name&lt;/DataMember&gt;&lt;Key&gt;Department_Name&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="PID"&gt;&lt;Caption&gt;PID&lt;/Caption&gt;&lt;DataMember&gt;PID&lt;/DataMember&gt;&lt;Key&gt;PID&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;120&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="DATEUPDATE"&gt;&lt;Caption&gt;Ngày &lt;/Caption&gt;&lt;DataMember&gt;DATEUPDATE&lt;/DataMember&gt;&lt;FormatString&gt;{0:D}&lt;/FormatString&gt;&lt;Key&gt;DATEUPDATE&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;FormatMode&gt;UseStringFormat&lt;/FormatMode&gt;&lt;/Column8&gt;&lt;Column9 ID="Patient_ID"&gt;&lt;Caption&gt;Patient_ID&lt;/Caption&gt;&lt;DataMember&gt;Patient_ID&lt;/DataMember&gt;&lt;Key&gt;Patient_ID&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;Column10 ID="SexId"&gt;&lt;Caption&gt;SexId&lt;/Caption&gt;&lt;DataMember&gt;Sex&lt;/DataMember&gt;&lt;Key&gt;SexId&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column10&gt;&lt;Column11 ID="Insurance_Num"&gt;&lt;Caption&gt;Số Thẻ BH&lt;/Caption&gt;&lt;DataMember&gt;Insurance_Num&lt;/DataMember&gt;&lt;Key&gt;Insurance_Num&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;Column12 ID="DOB"&gt;&lt;Caption&gt;DOB&lt;/Caption&gt;&lt;DataMember&gt;DOB&lt;/DataMember&gt;&lt;Key&gt;DOB&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column12&gt;&lt;Column13 ID="IdentifyNum"&gt;&lt;Caption&gt;CMT&lt;/Caption&gt;&lt;DataMember&gt;IdentifyNum&lt;/DataMember&gt;&lt;Key&gt;IdentifyNum&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column13&gt;&lt;Column14 ID="Room"&gt;&lt;Caption&gt;Buồng&lt;/Caption&gt;&lt;DataMember&gt;Room&lt;/DataMember&gt;&lt;Key&gt;Room&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column14&gt;&lt;Column15 ID="Bed"&gt;&lt;Caption&gt;Giường&lt;/Caption&gt;&lt;DataMember&gt;Bed&lt;/DataMember&gt;&lt;Key&gt;Bed&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column15&gt;&lt;Column16 ID="ObjectType_Name"&gt;&lt;Caption&gt;Đối Tượng&lt;/Caption&gt;&lt;DataMember&gt;ObjectType_Name&lt;/DataMember&gt;&lt;Key&gt;ObjectType_Name&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column16&gt;&lt;Column17 ID="Hos_Status_Name"&gt;&lt;Caption&gt;Tình Trạng&lt;/Caption&gt;&lt;DataMember&gt;Hos_Status_Name&lt;/DataMember&gt;&lt;Key&gt;Hos_Status_Name&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column17&gt;&lt;Column18 ID="Test_ID"&gt;&lt;Caption&gt;Test_ID&lt;/Caption&gt;&lt;DataMember&gt;Test_ID&lt;/DataMember&gt;&lt;Key&gt;Test_ID&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column18&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+</root>

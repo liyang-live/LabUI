@@ -1,0 +1,20 @@
+cboAssignDoctor,,True,0
+dtpDOB,Chọn Ngày Sinh,False,1
+dtmDate,Ngày Nhập,True,2
+txtPID,PID,True,3
+txtPName,Họ Tên,True,4
+chkDOB,Ngày Sinh,False,5
+txtYearOfBirth,Năm Sinh,False,6
+txtAge,Tuổi,True,7
+cboSex,Giới Tính,True,8
+cboObject,Đối Tượng,True,9
+txtInsuranceNum,Số BHYT,True,10
+txtCanLamSangID,Mã Phiếu HIS,True,11
+txtCMT,Số CMT,True,12
+txtDepartment,Khoa,True,13
+cboDepartment,Danh sách khoa,True,14
+txtRoom,Buồng,True,15
+txtBed,Giường,True,16
+txtSoNha,Giường,True,17
+txtDiagnostic,Chẩn đoán,True,18
+txtAddress,Địa chỉ,True,19

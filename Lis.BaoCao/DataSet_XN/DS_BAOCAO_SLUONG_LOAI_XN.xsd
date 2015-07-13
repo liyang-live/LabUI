@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_BAOCAO_SLUONG_LOAI_XN" targetNamespace="http://tempuri.org/DS_BAOCAO_SLUONG_LOAI_XN.xsd" xmlns:mstns="http://tempuri.org/DS_BAOCAO_SLUONG_LOAI_XN.xsd" xmlns="http://tempuri.org/DS_BAOCAO_SLUONG_LOAI_XN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_BAOCAO_SLUONG_LOAI_XN" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DS_BAOCAO_SLUONG_LOAI_XN" msprop:Generator_UserDSName="DS_BAOCAO_SLUONG_LOAI_XN" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_BAOCAO_SLUONG_LOAI_XN" msprop:Generator_UserTableName="DT_BAOCAO_SLUONG_LOAI_XN" msprop:Generator_RowDeletedName="DT_BAOCAO_SLUONG_LOAI_XNRowDeleted" msprop:Generator_TableClassName="DT_BAOCAO_SLUONG_LOAI_XNDataTable" msprop:Generator_RowChangedName="DT_BAOCAO_SLUONG_LOAI_XNRowChanged" msprop:Generator_RowClassName="DT_BAOCAO_SLUONG_LOAI_XNRow" msprop:Generator_RowChangingName="DT_BAOCAO_SLUONG_LOAI_XNRowChanging" msprop:Generator_RowEvArgName="DT_BAOCAO_SLUONG_LOAI_XNRowChangeEvent" msprop:Generator_RowEvHandlerName="DT_BAOCAO_SLUONG_LOAI_XNRowChangeEventHandler" msprop:Generator_TablePropName="DT_BAOCAO_SLUONG_LOAI_XN" msprop:Generator_TableVarName="tableDT_BAOCAO_SLUONG_LOAI_XN" msprop:Generator_RowDeletingName="DT_BAOCAO_SLUONG_LOAI_XNRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_LOAI_XN" msprop:Generator_UserColumnName="ID_LOAI_XN" msprop:Generator_ColumnPropNameInRow="ID_LOAI_XN" msprop:Generator_ColumnVarNameInTable="columnID_LOAI_XN" msprop:Generator_ColumnPropNameInTable="ID_LOAI_XNColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TEN_LOAI_XN" msprop:Generator_UserColumnName="TEN_LOAI_XN" msprop:Generator_ColumnPropNameInRow="TEN_LOAI_XN" msprop:Generator_ColumnVarNameInTable="columnTEN_LOAI_XN" msprop:Generator_ColumnPropNameInTable="TEN_LOAI_XNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SO_LUONG" msprop:Generator_UserColumnName="SO_LUONG" msprop:Generator_ColumnPropNameInRow="SO_LUONG" msprop:Generator_ColumnVarNameInTable="columnSO_LUONG" msprop:Generator_ColumnPropNameInTable="SO_LUONGColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TEN_KET_QUA" msprop:Generator_UserColumnName="TEN_KET_QUA" msprop:Generator_ColumnPropNameInRow="TEN_KET_QUA" msprop:Generator_ColumnVarNameInTable="columnTEN_KET_QUA" msprop:Generator_ColumnPropNameInTable="TEN_KET_QUAColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

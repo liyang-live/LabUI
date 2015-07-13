@@ -1,0 +1,308 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ImportExel
+</name>
+</assembly>
+<members>
+<member name="P:ImportExel.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ImportExel.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ImportExel.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ImportExel.FrmImportFromExcel.LoadObjType(System.Data.DataTable,System.Windows.Forms.ComboBox)">
+	<summary>
+ Load lại đối tượng vào combobox
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetLot">
+	<summary>
+ Hàm lấy về mã lô từ CSDL
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetSex(System.String)">
+	<summary>
+ Kiểm tra xem trường nhập vào
+ </summary>
+	<param name="sex">string</param>
+	<returns>string</returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetWorksheet(System.String,System.String)">
+	<summary>
+ Lấy thông tin của từng sheet
+ </summary>
+	<param name="worksheetName">tên của sheet</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.InsertLOTID(System.Int32,System.Int32,System.DateTime,System.String,System.String,System.String)">
+	<summary>
+ Hàm đăng ký thêm lô bệnh nhân
+ </summary>
+	<param name="orderform">Nhập bất kỳ kiểu Integer</param>
+	<param name="orderto">Nhập bất kỳ kiểu Integer</param>
+	<param name="dateinput">Ngày hiện lại</param>
+	<param name="Obj">Đối tượng</param>
+	<param name="sex">Giới tính, string</param>
+	<param name="addr">Địa chỉ</param>
+	<returns>none</returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetMaxBarcode(System.DateTime)">
+	<summary>
+ Hàm Lấy mã barcode lớn nhất
+ </summary>
+	<param name="testDate">Ngày</param>
+	<returns>Số nguyên</returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetMaxPatientId(System.String)">
+	<summary>
+ Hàm lấy Patient_ID lớn nhất
+ </summary>
+	<param name="pid">pid</param>
+	<returns>trả về 1 nếu ko tìm thấy, trả về Patient_ID nếu tìm thấy </returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetMaxLOTID">
+	<summary>
+ Hàm lấy mã lô lớn nhất
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.GetIntOrder(System.String)">
+	<summary>
+ Hàm lấy IntOder
+ </summary>
+	<param name="testtypeId">testtypeId</param>
+	<returns>Số nguyên</returns>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.LoadTestType">
+	<summary>
+ Hàm lấy về loại xét nghiệm, đổ vào grdTestType
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ImportExel.FrmImportFromExcel.ProcessMapping">
+	<summary>
+ Hàm điều khiển sự kiện bỏ dấu và viết hoa
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ImportExel.ModBusinessHelper.GetAllTestTypeList">
+	<summary>
+ Gets all test type list.
+ </summary>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetIntOrder(System.Int32)">
+	<summary>
+ Trả về số thứ tự của Test trong bảng đăng ký
+ </summary>
+	<param name="testTypeId">The test type id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.TestInfoIsRegisted(System.Int32,System.Int32)">
+	<summary>
+ Hàm kiểm tra xem một bệnh nhân đã đăng ký loại xét nghiệm nào đó hay chưa 
+ </summary>
+	<param name="patient">The patient.</param>
+	<param name="testtypeId">The testtype id.</param>
+	<returns>True:Nếu đã đăng ký False:Nếu chưa đăng ký</returns>
+</member><member name="M:ImportExel.ModBusinessHelper.InsertTestInfo(System.Int32,System.Int32,System.DateTime,System.String)">
+	<summary>
+ Inserts the test info.
+ </summary>
+	<param name="tesTypeId">The type id.</param>
+	<param name="patientId">The patient id.</param>
+	<param name="barcode">The barcode.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.UpdateRegTestList(System.Int32,System.String,System.Boolean)">
+	<summary>
+ Cập nhất đăng ký chi tiết. Nếu biến Save=true thì thêm mới
+ </summary>
+	<param name="testid">The testid.</param>
+	<param name="testDataId">The test data id.</param>
+	<param name="save">if set to <c>true</c> [save].</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.FindPatientFromDateToDate(System.DateTime,System.DateTime)">
+	<summary>
+ Hàm Tìm kiếm bệnh nhân
+ </summary>
+	<param name="pfromDate">Ngày bắt đầu</param>
+	<param name="pToDate">Ngày kết thúc</param>
+	<returns>Bảng dữ liệu: Lỗi trả về Nothing </returns>
+</member><member name="M:ImportExel.ModBusinessHelper.InsertTestInfoForPatient(System.Int32,System.Int32,System.DateTime,System.String@,System.Int32@,System.String@)">
+	<summary>
+ Inserts the test info for patient.
+ </summary>
+	<param name="patientId">The patient id.</param>
+	<param name="testTypeId">The test type id.</param>
+	<param name="regDate">The reg date.</param>
+	<param name="barcode">The barcode.</param>
+	<param name="testId">The test id.</param>
+	<param name="messageOutput">The message output.</param>
+</member><member name="M:ImportExel.ModBusinessHelper.IsBiDirectionalTest(System.Int32)">
+	<summary>
+ Xác định một loại Test có phải là Test được đăng ký hai chiều hay không
+ </summary>
+	<param name="testTypeId">The test type id.</param>
+	<returns>
+		<c>true</c> if [is bi directional test] [the specified test type id]; otherwise, <c>false</c>.
+ </returns>
+</member><member name="M:ImportExel.ModBusinessHelper.TestInfoHasResult(System.String)">
+	<summary>
+ Kiểm tra xem một loại xét nghiệm đã có kết quả chưa ?
+ </summary>
+	<param name="testId">The test id.</param>
+	<returns>
+		<c>true</c> if the specified test id has result; otherwise, <c>false</c>.
+ </returns>
+</member><member name="M:ImportExel.ModBusinessHelper.DeleteSubsonic(SubSonic.TableSchema.Table,System.String,System.Int32)">
+	<summary>
+ Xóa dữ liệu từ bảng
+ </summary>
+	<param name="sTableName">Bảng dữ liệu cần xóa</param>
+	<param name="sFieldName">Trường dữ liệu cần so sánh</param>
+	<param name="sValue">Giá trị so sánh</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestTypeandTReglistForPatient(System.Int32,System.DateTime,System.DateTime)">
+	<summary>
+ Trả về bảng đăng ký xét nghiệm của bệnh nhân
+ </summary>
+	<param name="patientId">The patient id.</param>
+	<param name="fromDate">From date.</param>
+	<param name="toDate">To date.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestIdFromBarcodeAndTestTypeId(System.String,System.String)">
+	<summary>
+ Hàm trả về TestID 
+ </summary>
+	<param name="barcode">The barcode.</param>
+	<param name="testtypeId">The testtype id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetAllDepartment">
+	<summary>
+ Lấy về danh sách phòng ban
+ </summary>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetAllObjectType">
+	<summary>
+ Lấy về danh sách các đối tượng
+ </summary>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestTypeIdFromTestId(System.Int32)">
+	<summary>
+ Gets the test type id from test id. Return -1 if has some Error
+ </summary>
+	<param name="testId">The test id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestTypeNameFromTestTypeId(System.Int32)">
+	<summary>
+ Gets the test type name from test type id. Return Empty if has some error
+ </summary>
+	<param name="testTypeId">The test type id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestListFromTestTypeId(System.Int32,System.Boolean,System.Boolean)">
+	<summary>
+ Lấy về danh sách các xét nghiệm hai chiều có thể thực hiện từ TestTypeId
+ </summary>
+	<param name="testTypeId">The test type id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetBarcodeFromTestId(System.Int32)">
+	<summary>
+ Gets the barcode from test id.
+ </summary>
+	<param name="testId">The test id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestResultFromTestId(System.String)">
+	<summary>
+ Lấy toàn bộ kết quả từ một TestID
+ </summary>
+	<param name="testId">The test id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetRegListFromTestId(System.String)">
+	<summary>
+ Lấy toàn bộ đăng ký từ TestID
+ </summary>
+	<param name="testId">The test id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetTestTypeIdFromTestCode(System.String)">
+	<summary>
+ Gets the test type id from test code.
+ </summary>
+	<param name="pTestCode">The p test code.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.ModBusinessHelper.GetDeviceListByTestTypeId(System.Int32)">
+	<summary>
+ Lấy về danh sách thiết bị từ một loại xét nghiệm
+ </summary>
+	<param name="pTestTypeId">The p test type id.</param>
+	<returns></returns>
+</member><member name="M:ImportExel.Utilities.WriteDataTableToFile(System.Data.DataTable,System.String,System.Boolean)">
+	<summary>
+ Ghi toàn bộ nội dung của datatable ra file text
+ </summary>
+	<param name="dt">Data Table cần ghi</param>
+	<param name="outputFilePath">Đường dẫn đến file cần ghi</param>
+</member><member name="T:ImportExel.Utilities.MethodInvoker">
+	<summary>
+ Delegate to invoke a specific method on the control thread-safely.
+ </summary>
+	<param name="control">Control on which to invoke the method</param>
+	<param name="methodName">Method to be invoked</param>
+	<param name="paramValues">Method parameters</param>
+	<returns>Value returned by the invoked method</returns>
+</member><member name="T:ImportExel.Utilities.PropertyGetInvoker">
+	<summary>
+ Delegate to get a property value on the control thread-safely.
+ </summary>
+	<param name="control">Control on which to GET the property value</param>
+	<param name="propertyName">Property name</param>
+	<return>Property value</return>
+</member><member name="T:ImportExel.Utilities.PropertySetInvoker">
+	<summary>
+ Delegate to set a property value on the control thread-safely.
+ </summary>
+	<param name="control">Control on which to SET the property value</param>
+	<param name="propertyName">Property name</param>
+	<param name="value">New property value</param>
+</member><member name="M:ImportExel.Utilities.InvokeMethod(System.Windows.Forms.Control,System.String,System.Object[])">
+	<summary>
+ Invoke a specific method on the control thread-safely.
+ </summary>
+	<param name="control">Control on which to invoke the method</param>
+	<param name="methodName">Method to be invoked</param>
+	<param name="paramValues">Method parameters</param>
+	<return>Value returned by the invoked method</return>
+</member><member name="M:ImportExel.Utilities.GetProperty(System.Windows.Forms.Control,System.String)">
+	<summary>
+ Get a PropertyInfo object associated with a specific property on the control.
+ </summary>
+	<param name="control">Control</param>
+	<param name="propertyName">Property name</param>
+	<return>A PropertyInfo object associated with 
+ 'propertyName' on specified 'control'</return>
+</member><member name="M:ImportExel.Utilities.SetPropertyValue(System.Windows.Forms.Control,System.String,System.Object)">
+	<summary>
+ Set a property value on the control thread-safely.
+ </summary>
+	<param name="control">Control on which to SET the property value</param>
+	<param name="propertyName">Property name</param>
+	<param name="value">New property value</param>
+</member><member name="M:ImportExel.Utilities.GetPropertyValue(System.Windows.Forms.Control,System.String)">
+	<summary>
+ Get a property value on the control thread-safely.
+ </summary>
+	<param name="control">Control on which to GET the property value</param>
+	<param name="propertyName">Property name</param>
+	<return>Property value</return>
+</member><member name="M:ImportExel.Utilities.GetRunWithLablinkService">
+	<summary>
+ Lấy về tham số hệ thống RUNWITHLABLINKSERVICE.
+ </summary>
+	<returns>True: Nếu chạy cùng LABLink Service (=1)</returns>
+</member>
+</members>
+</doc>

@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14772865-6013-42F7-B26E-CF542792880E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lis.GiaoDien</RootNamespace>
+    <AssemblyName>Lis.GiaoDien</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Running\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=8.0.0.0, Culture=neutral, PublicKeyToken=5fd520d36328f741, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=9.3.0.0, Culture=neutral, PublicKeyToken=f90dc37c26666a67, processorArchitecture=MSIL">
+      <HintPath>..\Running\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\library\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\library\Janus.Windows.CalendarCombo.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\library\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\library\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\library\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="LIS.DAL">
+      <HintPath>..\Running\LIS.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Mabry.Barcode, Version=1.1.2.0, Culture=neutral, PublicKeyToken=6f0adad0c34a9be1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Mabry.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Mabry.Core, Version=1.1.1.0, Culture=neutral, PublicKeyToken=6f0adad0c34a9be1">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Mabry.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.12.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic.Core, Version=3.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\SubSonic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VNS.Bus">
+      <HintPath>..\Running\VNS.Bus.dll</HintPath>
+    </Reference>
+    <Reference Include="VNS.Libs">
+      <HintPath>..\Running\VNS.Libs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarcodeInfo.cs" />
+    <Compile Include="BetterTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\clsHanhChinh.cs" />
+    <Compile Include="Class\RSACryptography.cs" />
+    <Compile Include="ColorEditor.cs" />
+    <Compile Include="ControlUtilities.cs" />
+    <Compile Include="CrptBusiness.cs" />
+    <Compile Include="Forms\frm_InPhieuKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_InPhieuKetQua.Designer.cs">
+      <DependentUpon>frm_InPhieuKetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDangKyTraCuuNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDangKyTraCuuNew.Designer.cs">
+      <DependentUpon>FrmDangKyTraCuuNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_InPhieuChiDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_InPhieuChiDinh.Designer.cs">
+      <DependentUpon>frm_InPhieuChiDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDangKyTraCuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDangKyTraCuu.Designer.cs">
+      <DependentUpon>FrmDangKyTraCuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTestTypeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTestTypeRegistration.Designer.cs">
+      <DependentUpon>frmTestTypeRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ChoosePrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ChoosePrint.Designer.cs">
+      <DependentUpon>frm_ChoosePrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_TraCuuKQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_TraCuuKQ.Designer.cs">
+      <DependentUpon>frm_TraCuuKQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAllMainProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInput_Update_Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInput_Update_Barcode.Designer.cs">
+      <DependentUpon>frmInput_Update_Barcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInsertUpdatePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInsertUpdatePatient.Designer.cs">
+      <DependentUpon>frmInsertUpdatePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPatientRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPatientRegistration.Designer.cs">
+      <DependentUpon>frmPatientRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmQuickTabConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmQuickTabConfig.Designer.cs">
+      <DependentUpon>frmQuickTabConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmResultDetailInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmResultDetailInfo.Designer.cs">
+      <DependentUpon>frmResultDetailInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchPatient.Designer.cs">
+      <DependentUpon>frmSearchPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSortingTestWithNoID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSortingTestWithNoID.Designer.cs">
+      <DependentUpon>frmSortingTestWithNoID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmStandardTestData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmStandardTestData.Designer.cs">
+      <DependentUpon>frmStandardTestData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTestResultInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTestResultInfo.Designer.cs">
+      <DependentUpon>frmTestResultInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTiepDonDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTiepDonDangKy.Designer.cs">
+      <DependentUpon>frmTiepDonDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_AllMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_AllMain.Designer.cs">
+      <DependentUpon>frm_AllMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuickInputResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuickInputResult.Designer.cs">
+      <DependentUpon>frmQuickInputResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HisLisProperties.cs" />
+    <Compile Include="Frm_Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Config.Designer.cs">
+      <DependentUpon>Frm_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DangKyTraCuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DangKyTraCuu.Designer.cs">
+      <DependentUpon>frm_DangKyTraCuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PreloadedLists.cs" />
+    <Compile Include="SysPara.cs" />
+    <Compile Include="UserControls\Uc_QuickInputResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Uc_QuickInputResult.Designer.cs">
+      <DependentUpon>Uc_QuickInputResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TabOrderItem.cs" />
+    <Compile Include="ProcessData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SafeInvokeUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frm_InPhieuKetQua.resx">
+      <DependentUpon>frm_InPhieuKetQua.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDangKyTraCuuNew.resx">
+      <DependentUpon>FrmDangKyTraCuuNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_InPhieuChiDinh.resx">
+      <DependentUpon>frm_InPhieuChiDinh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDangKyTraCuu.resx">
+      <DependentUpon>FrmDangKyTraCuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTestTypeRegistration.resx">
+      <DependentUpon>frmTestTypeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ChoosePrint.resx">
+      <DependentUpon>frm_ChoosePrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_TraCuuKQ.resx">
+      <DependentUpon>frm_TraCuuKQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInput_Update_Barcode.resx">
+      <DependentUpon>frmInput_Update_Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInsertUpdatePatient.resx">
+      <DependentUpon>frmInsertUpdatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPatientRegistration.resx">
+      <DependentUpon>frmPatientRegistration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmQuickTabConfig.resx">
+      <DependentUpon>frmQuickTabConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmResultDetailInfo.resx">
+      <DependentUpon>frmResultDetailInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchPatient.resx">
+      <DependentUpon>frmSearchPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSortingTestWithNoID.resx">
+      <DependentUpon>frmSortingTestWithNoID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmStandardTestData.resx">
+      <DependentUpon>frmStandardTestData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTestResultInfo.resx">
+      <DependentUpon>frmTestResultInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTiepDonDangKy.resx">
+      <DependentUpon>frmTiepDonDangKy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_AllMain.resx">
+      <DependentUpon>frm_AllMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuickInputResult.resx">
+      <DependentUpon>frmQuickInputResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Config.resx">
+      <DependentUpon>Frm_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DangKyTraCuu.resx">
+      <DependentUpon>frm_DangKyTraCuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Uc_QuickInputResult.resx">
+      <DependentUpon>Uc_QuickInputResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

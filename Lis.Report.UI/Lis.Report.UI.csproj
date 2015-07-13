@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66ED0873-EDD1-4564-835C-4489786315F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lis.Report.UI</RootNamespace>
+    <AssemblyName>Lis.Report.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Running\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\Running\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation">
+      <HintPath>..\Running\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX">
+      <HintPath>..\Running\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="ImportExel">
+      <HintPath>..\Running\ImportExel.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.ButtonBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.CalendarCombo.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.ExplorerBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.FilterEditor.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.Ribbon.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.Schedule.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.TimeLine.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Running\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="LIS.DAL">
+      <HintPath>..\Running\LIS.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Lis.LoadData">
+      <HintPath>..\Running\Lis.LoadData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SubSonic">
+      <HintPath>..\Running\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VNS.Bus">
+      <HintPath>..\Running\VNS.Bus.dll</HintPath>
+    </Reference>
+    <Reference Include="VNS.Libs">
+      <HintPath>..\Running\VNS.Libs.dll</HintPath>
+    </Reference>
+    <Reference Include="VNS.UCs">
+      <HintPath>..\Running\VNS.UCs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoChung\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoChung\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoChung\frm_BaoCaoLuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoChung\frm_BaoCaoLuu.Designer.cs">
+      <DependentUpon>frm_BaoCaoLuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoChung\frm_BaoCaoThongKeXN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoChung\frm_BaoCaoThongKeXN.Designer.cs">
+      <DependentUpon>frm_BaoCaoThongKeXN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoChung\frm_BaoCaoDanhSachBenhNhan_TestType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoChung\frm_BaoCaoDanhSachBenhNhan_TestType.Designer.cs">
+      <DependentUpon>frm_BaoCaoDanhSachBenhNhan_TestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrptBusiness.cs" />
+    <Compile Include="Datasets\dsSoGhiChep1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSoGhiChep.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsTotalTestVNIO.cs">
+      <DependentUpon>dsTotalTestVNIO.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\dsTotalTestVNIO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTotalTestVNIO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BaoCaoLuu.cs">
+      <DependentUpon>ds_BaoCaoLuu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BaoCaoLuu.Designer.cs">
+      <DependentUpon>ds_BaoCaoLuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BaoCaoLuu1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_BaoCaoLuu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_BaoCaoLuu_NoBarcode1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BaoCaoLuu_NoBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Ds_BaoCaoMau.cs">
+      <DependentUpon>Ds_BaoCaoMau.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\Ds_BaoCaoMau.Designer.cs">
+      <DependentUpon>Ds_BaoCaoMau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Ds_BaoCaoMau1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BaoCaoMau.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.cs">
+      <DependentUpon>ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.Designer.cs">
+      <DependentUpon>ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SLUONG_BN_NHANGUI_MAU1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.cs">
+      <DependentUpon>ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.Designer.cs">
+      <DependentUpon>ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_BAOCAO_SOLUONG_LOAIXETNGHIEM1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_BAOCAO_THOP_SLUONG_XETNGHIEM1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BAOCAO_THOP_SLUONG_XETNGHIEM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_XOA_KETQUA1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_BAOCAO_XOA_KETQUA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_BAOCAO_XOA_KETQUA_CHITIET1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_BAOCAO_XOA_KETQUA_CHITIET.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Ds_BenhNhan_TheoBarcode.cs">
+      <DependentUpon>Ds_BenhNhan_TheoBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Ds_BenhNhan_TheoBarcode.Designer.cs">
+      <DependentUpon>Ds_BenhNhan_TheoBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Ds_BenhNhan_TheoBarcode1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BenhNhan_TheoBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_BN_TestType.cs">
+      <DependentUpon>DS_BN_TestType.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\DS_BN_TestType.Designer.cs">
+      <DependentUpon>DS_BN_TestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_BN_TestType1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BN_TestType.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_dailyDetailTestReport.cs">
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\ds_dailyDetailTestReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_DANGKY_KETQUA_LOAIXN.cs">
+      <DependentUpon>DS_DANGKY_KETQUA_LOAIXN.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\DS_DANGKY_KETQUA_LOAIXN.Designer.cs">
+      <DependentUpon>DS_DANGKY_KETQUA_LOAIXN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DS_DANGKY_KETQUA_LOAIXN1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DANGKY_KETQUA_LOAIXN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_DA_BAOCAO_THOIGIAN_XETNGHIEM1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_DA_BAOCAO_THOIGIAN_XETNGHIEM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_PHIEUTHU.cs">
+      <DependentUpon>ds_PHIEUTHU.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datasets\ds_PHIEUTHU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_PHIEUTHU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\ds_SoLuongMau1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_SoLuongMau.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SLUONG_LOAI_XN1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SOLUONGBN_THEODOITUONG.cs">
+      <DependentUpon>DS_BAOCAO_SOLUONGBN_THEODOITUONG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SOLUONGBN_THEODOITUONG.Designer.cs">
+      <DependentUpon>DS_BAOCAO_SOLUONGBN_THEODOITUONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SOLUONGBN_THEODOITUONG1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BAOCAO_SOLUONGBN_THEODOITUONG.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SOLUONG_BNHAN.cs">
+      <DependentUpon>DS_BAOCAO_SOLUONG_BNHAN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SOLUONG_BNHAN.Designer.cs">
+      <DependentUpon>DS_BAOCAO_SOLUONG_BNHAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN\DS_BAOCAO_SOLUONG_BNHAN1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_BAOCAO_SOLUONG_BNHAN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN_THAIHA\DS_THAIHABAOCAO_SLUONG_LOAI_XN.cs">
+      <DependentUpon>DS_THAIHABAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_XN_THAIHA\DS_THAIHABAOCAO_SLUONG_LOAI_XN.Designer.cs">
+      <DependentUpon>DS_THAIHABAOCAO_SLUONG_LOAI_XN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_XN_THAIHA\DS_THAIHABAOCAO_SLUONG_LOAI_XN1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_THAIHABAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelReport.cs" />
+    <Compile Include="Forms\frmAllPatientInfoAndResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAllPatientInfoAndResult.Designer.cs">
+      <DependentUpon>frmAllPatientInfoAndResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmArchiverReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmArchiverReport.Designer.cs">
+      <DependentUpon>frmArchiverReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDepartmentTestReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDepartmentTestReport.Designer.cs">
+      <DependentUpon>frmDepartmentTestReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHIV_HBsAg_HCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHIV_HBsAg_HCV.Designer.cs">
+      <DependentUpon>frmHIV_HBsAg_HCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SLUONG_KPHONG_GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SLUONG_KPHONG_GUI.Designer.cs">
+      <DependentUpon>frm_BAOCAO_SLUONG_KPHONG_GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SL_BN_NHANGUI_MAU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SL_BN_NHANGUI_MAU.Designer.cs">
+      <DependentUpon>frm_BAOCAO_SL_BN_NHANGUI_MAU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SOLUONG_XN_THEOKHOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SOLUONG_XN_THEOKHOA.Designer.cs">
+      <DependentUpon>frm_BAOCAO_SOLUONG_XN_THEOKHOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SOLUONG_XN_THEOKHOA_NOITIET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BAOCAO_SOLUONG_XN_THEOKHOA_NOITIET.Designer.cs">
+      <DependentUpon>frm_BAOCAO_SOLUONG_XN_THEOKHOA_NOITIET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_DANGKY_KETQUA_THEO_LOAIXN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_DANGKY_KETQUA_THEO_LOAIXN.Designer.cs">
+      <DependentUpon>frm_DANGKY_KETQUA_THEO_LOAIXN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_DanhSachBenhNhan_TestType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_DanhSachBenhNhan_TestType.Designer.cs">
+      <DependentUpon>frm_DanhSachBenhNhan_TestType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_DONGANH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_DONGANH.Designer.cs">
+      <DependentUpon>frm_DONGANH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_LAOKHOA_SLMAU_THEOBARCODE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_LAOKHOA_SLMAU_THEOBARCODE.Designer.cs">
+      <DependentUpon>Frm_LAOKHOA_SLMAU_THEOBARCODE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_PatientNoBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_PatientNoBarcode.Designer.cs">
+      <DependentUpon>Frm_PatientNoBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SO_GHI_CHEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SO_GHI_CHEP.Designer.cs">
+      <DependentUpon>SO_GHI_CHEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAOSLBN_THEODOITUONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAOSLBN_THEODOITUONG.Designer.cs">
+      <DependentUpon>frm_GTVT_BAOCAOSLBN_THEODOITUONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.Designer.cs">
+      <DependentUpon>frm_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.Designer.cs">
+      <DependentUpon>frm_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAO_TRUC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GTVT\frm_GTVT_BAOCAO_TRUC.Designer.cs">
+      <DependentUpon>frm_GTVT_BAOCAO_TRUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_THAIHA\frm_THAIHA_BAOCAO_SOLUONG_LOAI_XN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_THAIHA\frm_THAIHA_BAOCAO_SOLUONG_LOAI_XN.Designer.cs">
+      <DependentUpon>frm_THAIHA_BAOCAO_SOLUONG_LOAI_XN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GTVT\CRPT_GTVT_BAOCAO_SLUONG_BNHAN_THEODOITUONG1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_GTVT_BAOCAO_SLUONG_BNHAN_THEODOITUONG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GTVT\CRPT_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBusiness.cs" />
+    <Compile Include="Reports\crpt_BaoCaoSoLuongBN_TestType.cs">
+      <DependentUpon>crpt_BaoCaoSoLuongBN_TestType.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\crpt_BaoCaoLuu1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_BaoCaoLuu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Crpt_BaoCaoLuu_NoBarcode1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crpt_BaoCaoLuu_NoBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Crpt_BaoCaoMau1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crpt_BaoCaoMau.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_BAOCAO_SLUONG_BN_NHANGUI_MAU1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_BAOCAO_SLUONG_BN_NHANGUI_MAU.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRPT_BAOCAO_SLUONG_XETNGHIEM1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_BAOCAO_SLUONG_XETNGHIEM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_BAOCAO_SOLUONG_XN_THEOKHOA1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_BAOCAO_SOLUONG_XN_THEOKHOA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_BAOCAO_SUAXOA_KETQUA_CHITIET1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_BAOCAO_SUAXOA_KETQUA_CHITIET.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_BAOCAO_XOA_KETQUA_TONGHOP1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_BAOCAO_XOA_KETQUA_TONGHOP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DailyTestReportDepartment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DailyTestReportDepartment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_DailyTotalTestReportDetailVNIO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DailyTotalTestReportDetailVNIO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRPT_DA_BAOCAO_THOIGIAN_XETNGHIEM1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_DA_BAOCAO_THOIGIAN_XETNGHIEM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRPT_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_LaoKhoa_SLMau_TheoBarcode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_LaoKhoa_SLMau_TheoBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_PHIEUTHU1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_PHIEUTHU.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_SoGhiChep1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_SoGhiChep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpt_SoLuongMauTheoBarcode1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_SoLuongMauTheoBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Crp_DSBN_TestType1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crp_DSBN_TestType.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CRTP_GTVT_BAOCAO_SLUONG_XNGHIEM_THEO_TLOAI1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTP_GTVT_BAOCAO_SLUONG_XNGHIEM_THEO_TLOAI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ThaiHa\CRPT_THAIHA_BAOCAO_SLUONG_LOAI_XN1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_THAIHA_BAOCAO_SLUONG_LOAI_XN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VietDuc\VD_crpt_DailyParamTestReport11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DailyParamTestReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VietDuc\VD_crpt_DailyParamTestReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VD_crpt_DailyParamTestReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XayDung\CRPT_XD_BAOCAO_SLUONG_BNHAN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_XD_BAOCAO_SLUONG_BNHAN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XayDung\CRPT_XD_BAOCAO_SLUONG_BNHAN_THEODOITUONG1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_XD_BAOCAO_SLUONG_BNHAN_THEODOITUONG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XayDung\CRPT_XD_BAOCAO_SLUONG_LOAI_XN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRPT_XD_BAOCAO_SLUONG_LOAI_XN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_DienGiaiMienDich1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_DienGiaiMienDich.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_DongCamMau1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_DongCamMau.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_HoaSinh1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_HoaSinh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_HuyetHoc11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_HuyetHoc1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_HuyetHoc2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_HuyetHoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_NuocTieu1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_NuocTieu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YHHQ\crpt_DangKy_KetQua_VisinhKySinhTrung1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpt_DangKy_KetQua_VisinhKySinhTrung.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\dsSoGhiChep.xsc">
+      <DependentUpon>dsSoGhiChep.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsSoGhiChep.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSoGhiChep1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\dsSoGhiChep.xss">
+      <DependentUpon>dsSoGhiChep.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsTotalTestVNIO.xsc">
+      <DependentUpon>dsTotalTestVNIO.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsTotalTestVNIO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTotalTestVNIO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\dsTotalTestVNIO.xss">
+      <DependentUpon>dsTotalTestVNIO.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BaoCaoLuu.xsc">
+      <DependentUpon>ds_BaoCaoLuu.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BaoCaoLuu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_BaoCaoLuu1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_BaoCaoLuu.xss">
+      <DependentUpon>ds_BaoCaoLuu.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BaoCaoLuu_NoBarcode.xsc">
+      <DependentUpon>DS_BaoCaoLuu_NoBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BaoCaoLuu_NoBarcode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BaoCaoLuu_NoBarcode1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DS_BaoCaoLuu_NoBarcode.xss">
+      <DependentUpon>DS_BaoCaoLuu_NoBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Ds_BaoCaoMau.xsc">
+      <DependentUpon>Ds_BaoCaoMau.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Ds_BaoCaoMau.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BaoCaoMau1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\Ds_BaoCaoMau.xss">
+      <DependentUpon>Ds_BaoCaoMau.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xsc">
+      <DependentUpon>ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_BAOCAO_SLUONG_BN_NHANGUI_MAU1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xss">
+      <DependentUpon>ds_BAOCAO_SLUONG_BN_NHANGUI_MAU.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xsc">
+      <DependentUpon>ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xss">
+      <DependentUpon>ds_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsc">
+      <DependentUpon>DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BAOCAO_SOLUONG_LOAIXETNGHIEM1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xss">
+      <DependentUpon>DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt.xsc">
+      <DependentUpon>ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt.xss">
+      <DependentUpon>ds_BAOCAO_SOLUONG_XN_THEOKHOA.rpt.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BAOCAO_THOP_SLUONG_XETNGHIEM.xsc">
+      <DependentUpon>DS_BAOCAO_THOP_SLUONG_XETNGHIEM.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BAOCAO_THOP_SLUONG_XETNGHIEM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BAOCAO_THOP_SLUONG_XETNGHIEM1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DS_BAOCAO_THOP_SLUONG_XETNGHIEM.xss">
+      <DependentUpon>DS_BAOCAO_THOP_SLUONG_XETNGHIEM.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_XOA_KETQUA.xsc">
+      <DependentUpon>ds_BAOCAO_XOA_KETQUA.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_XOA_KETQUA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_BAOCAO_XOA_KETQUA1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_XOA_KETQUA.xss">
+      <DependentUpon>ds_BAOCAO_XOA_KETQUA.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_XOA_KETQUA_CHITIET.xsc">
+      <DependentUpon>ds_BAOCAO_XOA_KETQUA_CHITIET.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_XOA_KETQUA_CHITIET.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_BAOCAO_XOA_KETQUA_CHITIET1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_BAOCAO_XOA_KETQUA_CHITIET.xss">
+      <DependentUpon>ds_BAOCAO_XOA_KETQUA_CHITIET.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Ds_BenhNhan_TheoBarcode.xsc">
+      <DependentUpon>Ds_BenhNhan_TheoBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Ds_BenhNhan_TheoBarcode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BenhNhan_TheoBarcode1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\Ds_BenhNhan_TheoBarcode.xss">
+      <DependentUpon>Ds_BenhNhan_TheoBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BN_TestType.xsc">
+      <DependentUpon>DS_BN_TestType.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_BN_TestType.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BN_TestType1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DS_BN_TestType.xss">
+      <DependentUpon>DS_BN_TestType.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_dailyDetailTestReport.xsc">
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_dailyDetailTestReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_dailyDetailTestReport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_dailyDetailTestReport.xss">
+      <DependentUpon>ds_dailyDetailTestReport.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_DANGKY_KETQUA_LOAIXN.xsc">
+      <DependentUpon>DS_DANGKY_KETQUA_LOAIXN.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DS_DANGKY_KETQUA_LOAIXN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DANGKY_KETQUA_LOAIXN1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\DS_DANGKY_KETQUA_LOAIXN.xss">
+      <DependentUpon>DS_DANGKY_KETQUA_LOAIXN.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_DA_BAOCAO_THOIGIAN_XETNGHIEM.xsc">
+      <DependentUpon>ds_DA_BAOCAO_THOIGIAN_XETNGHIEM.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_DA_BAOCAO_THOIGIAN_XETNGHIEM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_DA_BAOCAO_THOIGIAN_XETNGHIEM1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_DA_BAOCAO_THOIGIAN_XETNGHIEM.xss">
+      <DependentUpon>ds_DA_BAOCAO_THOIGIAN_XETNGHIEM.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_PHIEUTHU.xsc">
+      <DependentUpon>ds_PHIEUTHU.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_PHIEUTHU.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_PHIEUTHU.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_PHIEUTHU.xss">
+      <DependentUpon>ds_PHIEUTHU.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_SoLuongMau.xsc">
+      <DependentUpon>ds_SoLuongMau.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\ds_SoLuongMau.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_SoLuongMau1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\ds_SoLuongMau.xss">
+      <DependentUpon>ds_SoLuongMau.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SLUONG_LOAI_XN.xsc">
+      <DependentUpon>DS_BAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SLUONG_LOAI_XN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BAOCAO_SLUONG_LOAI_XN1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SLUONG_LOAI_XN.xss">
+      <DependentUpon>DS_BAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SOLUONGBN_THEODOITUONG.xsc">
+      <DependentUpon>DS_BAOCAO_SOLUONGBN_THEODOITUONG.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SOLUONGBN_THEODOITUONG.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BAOCAO_SOLUONGBN_THEODOITUONG1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SOLUONGBN_THEODOITUONG.xss">
+      <DependentUpon>DS_BAOCAO_SOLUONGBN_THEODOITUONG.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SOLUONG_BNHAN.xsc">
+      <DependentUpon>DS_BAOCAO_SOLUONG_BNHAN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SOLUONG_BNHAN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_BAOCAO_SOLUONG_BNHAN1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_XN\DS_BAOCAO_SOLUONG_BNHAN.xss">
+      <DependentUpon>DS_BAOCAO_SOLUONG_BNHAN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN_THAIHA\DS_THAIHABAOCAO_SLUONG_LOAI_XN.xsc">
+      <DependentUpon>DS_THAIHABAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_XN_THAIHA\DS_THAIHABAOCAO_SLUONG_LOAI_XN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_THAIHABAOCAO_SLUONG_LOAI_XN1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet_XN_THAIHA\DS_THAIHABAOCAO_SLUONG_LOAI_XN.xss">
+      <DependentUpon>DS_THAIHABAOCAO_SLUONG_LOAI_XN.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaoCaoChung\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoChung\frm_BaoCaoLuu.resx">
+      <DependentUpon>frm_BaoCaoLuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoChung\frm_BaoCaoThongKeXN.resx">
+      <DependentUpon>frm_BaoCaoThongKeXN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoChung\frm_BaoCaoDanhSachBenhNhan_TestType.resx">
+      <DependentUpon>frm_BaoCaoDanhSachBenhNhan_TestType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAllPatientInfoAndResult.resx">
+      <DependentUpon>frmAllPatientInfoAndResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmArchiverReport.resx">
+      <DependentUpon>frmArchiverReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDepartmentTestReport.resx">
+      <DependentUpon>frmDepartmentTestReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHIV_HBsAg_HCV.resx">
+      <DependentUpon>frmHIV_HBsAg_HCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BAOCAO_SLUONG_KPHONG_GUI.resx">
+      <DependentUpon>frm_BAOCAO_SLUONG_KPHONG_GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BAOCAO_SL_BN_NHANGUI_MAU.resx">
+      <DependentUpon>frm_BAOCAO_SL_BN_NHANGUI_MAU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BAOCAO_SOLUONG_XN_THEOKHOA.resx">
+      <DependentUpon>frm_BAOCAO_SOLUONG_XN_THEOKHOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BAOCAO_SOLUONG_XN_THEOKHOA_NOITIET.resx">
+      <DependentUpon>frm_BAOCAO_SOLUONG_XN_THEOKHOA_NOITIET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_DANGKY_KETQUA_THEO_LOAIXN.resx">
+      <DependentUpon>frm_DANGKY_KETQUA_THEO_LOAIXN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_DanhSachBenhNhan_TestType.resx">
+      <DependentUpon>frm_DanhSachBenhNhan_TestType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_DONGANH.resx">
+      <DependentUpon>frm_DONGANH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_LAOKHOA_SLMAU_THEOBARCODE.resx">
+      <DependentUpon>Frm_LAOKHOA_SLMAU_THEOBARCODE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_PatientNoBarcode.resx">
+      <DependentUpon>Frm_PatientNoBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SO_GHI_CHEP.resx">
+      <DependentUpon>SO_GHI_CHEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GTVT\frm_GTVT_BAOCAOSLBN_THEODOITUONG.resx">
+      <DependentUpon>frm_GTVT_BAOCAOSLBN_THEODOITUONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GTVT\frm_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.resx">
+      <DependentUpon>frm_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GTVT\frm_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.resx">
+      <DependentUpon>frm_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GTVT\frm_GTVT_BAOCAO_TRUC.resx">
+      <DependentUpon>frm_GTVT_BAOCAO_TRUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_THAIHA\frm_THAIHA_BAOCAO_SOLUONG_LOAI_XN.resx">
+      <DependentUpon>frm_THAIHA_BAOCAO_SOLUONG_LOAI_XN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GTVT\CRPT_GTVT_BAOCAO_SLUONG_BNHAN_THEODOITUONG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_GTVT_BAOCAO_SLUONG_BNHAN_THEODOITUONG1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GTVT\CRPT_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_GTVT_BAOCAO_SLUONG_XETNGHIEM_THEODOITUONG1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_BaoCaoSoLuongBN_TestType.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_BaoCaoSoLuongBN_TestType.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_BaoCaoLuu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_BaoCaoLuu1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crpt_BaoCaoLuu_NoBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crpt_BaoCaoLuu_NoBarcode1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crpt_BaoCaoMau.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crpt_BaoCaoMau1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_BAOCAO_SLUONG_BN_NHANGUI_MAU.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_BAOCAO_SLUONG_BN_NHANGUI_MAU1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRPT_BAOCAO_SLUONG_XETNGHIEM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_BAOCAO_SLUONG_XETNGHIEM1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_BAOCAO_SOLUONG_XN_THEOKHOA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_BAOCAO_SOLUONG_XN_THEOKHOA1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_BAOCAO_SUAXOA_KETQUA_CHITIET.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_BAOCAO_SUAXOA_KETQUA_CHITIET1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_BAOCAO_XOA_KETQUA_TONGHOP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_BAOCAO_XOA_KETQUA_TONGHOP1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DailyTestReportDepartment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DailyTestReportDepartment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_DailyTotalTestReportDetailVNIO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DailyTotalTestReportDetailVNIO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRPT_DA_BAOCAO_THOIGIAN_XETNGHIEM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_DA_BAOCAO_THOIGIAN_XETNGHIEM1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRPT_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_GTVT_BAOCAO_SOLUONG_LOAIXETNGHIEM1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_LaoKhoa_SLMau_TheoBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_LaoKhoa_SLMau_TheoBarcode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_PHIEUTHU.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_PHIEUTHU1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_SoGhiChep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_SoGhiChep1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpt_SoLuongMauTheoBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_SoLuongMauTheoBarcode1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crp_DSBN_TestType.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crp_DSBN_TestType1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CRTP_GTVT_BAOCAO_SLUONG_XNGHIEM_THEO_TLOAI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTP_GTVT_BAOCAO_SLUONG_XNGHIEM_THEO_TLOAI1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThaiHa\CRPT_THAIHA_BAOCAO_SLUONG_LOAI_XN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_THAIHA_BAOCAO_SLUONG_LOAI_XN1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VietDuc\VD_crpt_DailyParamTestReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DailyParamTestReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VietDuc\VD_crpt_DailyParamTestReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VD_crpt_DailyParamTestReport11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XayDung\CRPT_XD_BAOCAO_SLUONG_BNHAN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_XD_BAOCAO_SLUONG_BNHAN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XayDung\CRPT_XD_BAOCAO_SLUONG_BNHAN_THEODOITUONG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_XD_BAOCAO_SLUONG_BNHAN_THEODOITUONG1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XayDung\CRPT_XD_BAOCAO_SLUONG_LOAI_XN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRPT_XD_BAOCAO_SLUONG_LOAI_XN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_DienGiaiMienDich.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_DienGiaiMienDich1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_DongCamMau.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_DongCamMau1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_HoaSinh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_HoaSinh1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_HuyetHoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_HuyetHoc2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_HuyetHoc1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_HuyetHoc11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_NuocTieu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_NuocTieu1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YHHQ\crpt_DangKy_KetQua_VisinhKySinhTrung.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpt_DangKy_KetQua_VisinhKySinhTrung1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

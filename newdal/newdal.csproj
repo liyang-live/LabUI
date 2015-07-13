@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD0BE8E8-B7D8-41CA-95F7-EA03675CFE0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>newdal</RootNamespace>
+    <AssemblyName>LIS.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Running\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SubSonic, Version=2.2.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomProvider\CustomSqlProvider.cs" />
+    <Compile Include="CustomProvider\SubSonicHelper.cs" />
+    <Compile Include="Generated\AllStructs.cs" />
+    <Compile Include="Generated\BangGium.cs" />
+    <Compile Include="Generated\BangGiumController.cs" />
+    <Compile Include="Generated\DDataControl.cs" />
+    <Compile Include="Generated\DDataControlController.cs" />
+    <Compile Include="Generated\DDeviceDataControl.cs" />
+    <Compile Include="Generated\DDeviceDataControlController.cs" />
+    <Compile Include="Generated\DDeviceDatatype.cs" />
+    <Compile Include="Generated\DDeviceDatatypeController.cs" />
+    <Compile Include="Generated\DDeviceList.cs" />
+    <Compile Include="Generated\DDeviceListController.cs" />
+    <Compile Include="Generated\DDevicePort.cs" />
+    <Compile Include="Generated\DDevicePortController.cs" />
+    <Compile Include="Generated\DDeviceTypeList.cs" />
+    <Compile Include="Generated\DDeviceTypeListController.cs" />
+    <Compile Include="Generated\DmucChung.cs" />
+    <Compile Include="Generated\DmucChungController.cs" />
+    <Compile Include="Generated\DmucDiachinh.cs" />
+    <Compile Include="Generated\DmucDiachinhController.cs" />
+    <Compile Include="Generated\KetnoiHisDanhmucDvu.cs" />
+    <Compile Include="Generated\KetnoiHisDanhmucDvuController.cs" />
+    <Compile Include="Generated\KetnoiMappingHisLi.cs" />
+    <Compile Include="Generated\KetnoiMappingHisLiController.cs" />
+    <Compile Include="Generated\LabNhtd20120926.cs" />
+    <Compile Include="Generated\LabNhtd20120926Controller.cs" />
+    <Compile Include="Generated\LAssemblyMapping.cs" />
+    <Compile Include="Generated\LAssemblyMappingController.cs" />
+    <Compile Include="Generated\LAssemblyReport.cs" />
+    <Compile Include="Generated\LAssemblyReportController.cs" />
+    <Compile Include="Generated\LDepartment.cs" />
+    <Compile Include="Generated\LDepartmentController.cs" />
+    <Compile Include="Generated\LDepartmentRoom.cs" />
+    <Compile Include="Generated\LDepartmentRoomController.cs" />
+    <Compile Include="Generated\LDepartmentss.cs" />
+    <Compile Include="Generated\LDepartmentssController.cs" />
+    <Compile Include="Generated\LFormControl.cs" />
+    <Compile Include="Generated\LFormControlController.cs" />
+    <Compile Include="Generated\LHisDichvu.cs" />
+    <Compile Include="Generated\LHisDichvuController.cs" />
+    <Compile Include="Generated\LManufacture.cs" />
+    <Compile Include="Generated\LManufactureController.cs" />
+    <Compile Include="Generated\LMappingEmac.cs" />
+    <Compile Include="Generated\LMappingEmacController.cs" />
+    <Compile Include="Generated\LObjectType.cs" />
+    <Compile Include="Generated\LObjectTypeController.cs" />
+    <Compile Include="Generated\LPatientInfo.cs" />
+    <Compile Include="Generated\LPatientInfoController.cs" />
+    <Compile Include="Generated\LPort.cs" />
+    <Compile Include="Generated\LPortController.cs" />
+    <Compile Include="Generated\LRole.cs" />
+    <Compile Include="Generated\LRoleController.cs" />
+    <Compile Include="Generated\LRoom.cs" />
+    <Compile Include="Generated\LRoomController.cs" />
+    <Compile Include="Generated\LStaff.cs" />
+    <Compile Include="Generated\LStaffController.cs" />
+    <Compile Include="Generated\LStandardTest.cs" />
+    <Compile Include="Generated\LStandardTestController.cs" />
+    <Compile Include="Generated\LStatus.cs" />
+    <Compile Include="Generated\LStatusController.cs" />
+    <Compile Include="Generated\LTestStatus.cs" />
+    <Compile Include="Generated\LTestStatusController.cs" />
+    <Compile Include="Generated\LUser.cs" />
+    <Compile Include="Generated\LUserController.cs" />
+    <Compile Include="Generated\LUserFormControl.cs" />
+    <Compile Include="Generated\LUserFormControlController.cs" />
+    <Compile Include="Generated\LUserTestType.cs" />
+    <Compile Include="Generated\LUserTestTypeController.cs" />
+    <Compile Include="Generated\StoredProcedures.cs" />
+    <Compile Include="Generated\SysAdministrator.cs" />
+    <Compile Include="Generated\SysAdministratorController.cs" />
+    <Compile Include="Generated\SysFunction.cs" />
+    <Compile Include="Generated\SysFunctionController.cs" />
+    <Compile Include="Generated\SysGroup.cs" />
+    <Compile Include="Generated\SysGroupController.cs" />
+    <Compile Include="Generated\SysGroupRole.cs" />
+    <Compile Include="Generated\SysGroupRoleController.cs" />
+    <Compile Include="Generated\SysGroupUser.cs" />
+    <Compile Include="Generated\SysGroupUserController.cs" />
+    <Compile Include="Generated\SysImgAndIcon.cs" />
+    <Compile Include="Generated\SysImgAndIconController.cs" />
+    <Compile Include="Generated\SysManagementUnit.cs" />
+    <Compile Include="Generated\SysManagementUnitController.cs" />
+    <Compile Include="Generated\SysMultiLanguage.cs" />
+    <Compile Include="Generated\SysMultiLanguageController.cs" />
+    <Compile Include="Generated\SysReport.cs" />
+    <Compile Include="Generated\SysReportController.cs" />
+    <Compile Include="Generated\SysRole.cs" />
+    <Compile Include="Generated\SysRoleController.cs" />
+    <Compile Include="Generated\SysRolesForUser.cs" />
+    <Compile Include="Generated\SysRolesForUserController.cs" />
+    <Compile Include="Generated\SysScreen.cs" />
+    <Compile Include="Generated\SysScreenController.cs" />
+    <Compile Include="Generated\SysSystemParameter.cs" />
+    <Compile Include="Generated\SysSystemParameterController.cs" />
+    <Compile Include="Generated\SysToolbarButton.cs" />
+    <Compile Include="Generated\SysToolbarButtonController.cs" />
+    <Compile Include="Generated\SysTrinhky.cs" />
+    <Compile Include="Generated\SysTrinhkyController.cs" />
+    <Compile Include="Generated\SysUser.cs" />
+    <Compile Include="Generated\SysUserController.cs" />
+    <Compile Include="Generated\SysVersion.cs" />
+    <Compile Include="Generated\SysVersionController.cs" />
+    <Compile Include="Generated\TblHislisHathangPatientInfo.cs" />
+    <Compile Include="Generated\TblHislisHathangPatientInfoController.cs" />
+    <Compile Include="Generated\TblHislisHathangReg.cs" />
+    <Compile Include="Generated\TblHislisHathangRegController.cs" />
+    <Compile Include="Generated\TblHislisHongNgocPatientInfo.cs" />
+    <Compile Include="Generated\TblHislisHongNgocPatientInfoController.cs" />
+    <Compile Include="Generated\TblHislisHongNgocPatientReg.cs" />
+    <Compile Include="Generated\TblHislisHongNgocPatientRegController.cs" />
+    <Compile Include="Generated\TblHislisHongNgocPatientRegDetail.cs" />
+    <Compile Include="Generated\TblHislisHongNgocPatientRegDetailController.cs" />
+    <Compile Include="Generated\TblHislisHongNgocTempBarcode.cs" />
+    <Compile Include="Generated\TblHislisHongNgocTempBarcodeController.cs" />
+    <Compile Include="Generated\TblHislisPatient.cs" />
+    <Compile Include="Generated\TblHislisPatientController.cs" />
+    <Compile Include="Generated\TblHisLisPatientInfoVnio.cs" />
+    <Compile Include="Generated\TblHisLisPatientInfoVnioController.cs" />
+    <Compile Include="Generated\TblHislisReg.cs" />
+    <Compile Include="Generated\TblHislisRegController.cs" />
+    <Compile Include="Generated\TblLot.cs" />
+    <Compile Include="Generated\TblLotController.cs" />
+    <Compile Include="Generated\TblParamMapping.cs" />
+    <Compile Include="Generated\TblParamMappingController.cs" />
+    <Compile Include="Generated\TblPayment.cs" />
+    <Compile Include="Generated\TblPaymentController.cs" />
+    <Compile Include="Generated\TblPaymentDetail.cs" />
+    <Compile Include="Generated\TblPaymentDetailController.cs" />
+    <Compile Include="Generated\TblReason.cs" />
+    <Compile Include="Generated\TblReasonController.cs" />
+    <Compile Include="Generated\TblRegService.cs" />
+    <Compile Include="Generated\TblRegServiceController.cs" />
+    <Compile Include="Generated\TblRegServiceDetail.cs" />
+    <Compile Include="Generated\TblRegServiceDetailController.cs" />
+    <Compile Include="Generated\TblRolesForUser.cs" />
+    <Compile Include="Generated\TblRolesForUserController.cs" />
+    <Compile Include="Generated\TblSecurity.cs" />
+    <Compile Include="Generated\TblSecurityController.cs" />
+    <Compile Include="Generated\TblServiceType.cs" />
+    <Compile Include="Generated\TblServiceTypeController.cs" />
+    <Compile Include="Generated\TblTestService.cs" />
+    <Compile Include="Generated\TblTestServiceController.cs" />
+    <Compile Include="Generated\TblTestTypeMapping.cs" />
+    <Compile Include="Generated\TblTestTypeMappingController.cs" />
+    <Compile Include="Generated\TblYeucauXetnghiemVnio.cs" />
+    <Compile Include="Generated\TblYeucauXetnghiemVnioController.cs" />
+    <Compile Include="Generated\TDataType.cs" />
+    <Compile Include="Generated\TDataTypeController.cs" />
+    <Compile Include="Generated\TErrorLog.cs" />
+    <Compile Include="Generated\TErrorLogController.cs" />
+    <Compile Include="Generated\TmpGetResultDetailByDepartment.cs" />
+    <Compile Include="Generated\TmpGetResultDetailByDepartmentController.cs" />
+    <Compile Include="Generated\TmpGetResultDetailByDoctor.cs" />
+    <Compile Include="Generated\TmpGetResultDetailByDoctorController.cs" />
+    <Compile Include="Generated\TParaList.cs" />
+    <Compile Include="Generated\TParaListController.cs" />
+    <Compile Include="Generated\TRegList.cs" />
+    <Compile Include="Generated\TRegListController.cs" />
+    <Compile Include="Generated\TResultDetail.cs" />
+    <Compile Include="Generated\TResultDetailController.cs" />
+    <Compile Include="Generated\TTestContent.cs" />
+    <Compile Include="Generated\TTestContentController.cs" />
+    <Compile Include="Generated\TTestgroupDtl.cs" />
+    <Compile Include="Generated\TTestgroupDtlController.cs" />
+    <Compile Include="Generated\TTestgroupList.cs" />
+    <Compile Include="Generated\TTestgroupListController.cs" />
+    <Compile Include="Generated\TTestInfo.cs" />
+    <Compile Include="Generated\TTestInfoController.cs" />
+    <Compile Include="Generated\TTestTypeList.cs" />
+    <Compile Include="Generated\TTestTypeListController.cs" />
+    <Compile Include="Generated\ViewDanhsachBenhnhan.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

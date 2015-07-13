@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrmAllMainProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NormalColor>White</NormalColor>
+  <LowColor>#FF8040</LowColor>
+  <HighColor>#FF8080</HighColor>
+  <TieuDeInXNKhac>PHIẾU KẾT QUẢ XÉT NGHIỆM KHAC</TieuDeInXNKhac>
+  <TieuDeInPhieuChiDinh>PHIẾU CHỈ ĐỊNH KHÁM BỆNH</TieuDeInPhieuChiDinh>
+  <TieuDeInPhieuKq>PHIẾU KẾT QUẢ XÉT NGHIỆM</TieuDeInPhieuKq>
+  <TabCapNhapKetQua>true</TabCapNhapKetQua>
+  <TabXulyDL>true</TabXulyDL>
+  <ResultDateColumn>false</ResultDateColumn>
+  <ChieuRong>110</ChieuRong>
+  <ChieuCao>27</ChieuCao>
+  <CanLe>0</CanLe>
+  <CanGiua>75</CanGiua>
+  <SoTemp>2</SoTemp>
+  <CanTraiPhai>15</CanTraiPhai>
+  <SoLuongIn>2</SoLuongIn>
+  <CanTop>10</CanTop>
+  <Height>200</Height>
+  <Width>200</Width>
+  <DoDaiBarcode>5</DoDaiBarcode>
+  <CauHinhInBarcode>true</CauHinhInBarcode>
+</FrmAllMainProperties>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrmAllMainProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NormalColor>White</NormalColor>
+  <LowColor>#FF8040</LowColor>
+  <HighColor>Red</HighColor>
+  <TieuDeInXNKhac>IN XN KHAC</TieuDeInXNKhac>
+  <TieuDeInPhieuChiDinh>Phiếu in chỉ định xét nghiệm</TieuDeInPhieuChiDinh>
+  <TieuDeInPhieuKq>Phiếu kết quả</TieuDeInPhieuKq>
+  <TabCapNhapKetQua>true</TabCapNhapKetQua>
+  <TabXulyDL>true</TabXulyDL>
+  <ResultDateColumn>true</ResultDateColumn>
+  <ChieuRong>110</ChieuRong>
+  <ChieuCao>35</ChieuCao>
+  <CanLe>0</CanLe>
+  <CanGiua>75</CanGiua>
+  <SoTemp>3</SoTemp>
+  <CanTraiPhai>15</CanTraiPhai>
+  <SoLuongIn>1</SoLuongIn>
+  <CanTop>6</CanTop>
+  <Height>200</Height>
+  <Width>200</Width>
+  <DoDaiBarcode>8</DoDaiBarcode>
+  <CauHinhInBarcode>false</CauHinhInBarcode>
+  <InBarcodeCoNgay>true</InBarcodeCoNgay>
+  <InBarcodeTheoSo>5</InBarcodeTheoSo>
+  <ConfirmResult>true</ConfirmResult>
+</FrmAllMainProperties>

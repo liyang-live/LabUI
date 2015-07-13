@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_BAOCAO_SOLUONG_LOAIXETNGHIEM" targetNamespace="http://tempuri.org/DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd" xmlns:mstns="http://tempuri.org/DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd" xmlns="http://tempuri.org/DS_BAOCAO_SOLUONG_LOAIXETNGHIEM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_BAOCAO_SOLUONG_LOAIXETNGHIEM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_BAOCAO_SOLUONG_LOAIXETNGHIEM" msprop:Generator_DataSetName="DS_BAOCAO_SOLUONG_LOAIXETNGHIEM" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_BAOCAO_SOLUONG_LOAIXETNGHIEM" msprop:Generator_UserTableName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEM" msprop:Generator_RowDeletedName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRowDeleted" msprop:Generator_RowChangedName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRowChanged" msprop:Generator_RowClassName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRow" msprop:Generator_RowChangingName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRowChanging" msprop:Generator_RowEvArgName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRowChangeEvent" msprop:Generator_RowEvHandlerName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRowChangeEventHandler" msprop:Generator_TableClassName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMDataTable" msprop:Generator_TableVarName="tableDT_BAOCAO_SOLUONG_LOAIXETNGHIEM" msprop:Generator_RowDeletingName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEMRowDeleting" msprop:Generator_TablePropName="DT_BAOCAO_SOLUONG_LOAIXETNGHIEM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Department_ID" msprop:Generator_UserColumnName="Department_ID" msprop:Generator_ColumnPropNameInRow="Department_ID" msprop:Generator_ColumnVarNameInTable="columnDepartment_ID" msprop:Generator_ColumnPropNameInTable="Department_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Department_Name" msprop:Generator_UserColumnName="Department_Name" msprop:Generator_ColumnPropNameInRow="Department_Name" msprop:Generator_ColumnVarNameInTable="columnDepartment_Name" msprop:Generator_ColumnPropNameInTable="Department_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TestType_ID" msprop:Generator_UserColumnName="TestType_ID" msprop:Generator_ColumnPropNameInRow="TestType_ID" msprop:Generator_ColumnVarNameInTable="columnTestType_ID" msprop:Generator_ColumnPropNameInTable="TestType_IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TestType_Name" msprop:Generator_UserColumnName="TestType_Name" msprop:Generator_ColumnPropNameInRow="TestType_Name" msprop:Generator_ColumnVarNameInTable="columnTestType_Name" msprop:Generator_ColumnPropNameInTable="TestType_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SOLUONG" msprop:Generator_UserColumnName="SOLUONG" msprop:Generator_ColumnPropNameInRow="SOLUONG" msprop:Generator_ColumnVarNameInTable="columnSOLUONG" msprop:Generator_ColumnPropNameInTable="SOLUONGColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Para_Name" msprop:Generator_UserColumnName="Para_Name" msprop:Generator_ColumnPropNameInRow="Para_Name" msprop:Generator_ColumnVarNameInTable="columnPara_Name" msprop:Generator_ColumnPropNameInTable="Para_NameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

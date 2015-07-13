@@ -1,0 +1,17 @@
+D:\VBITProjects\MyHIS\Running\VNS.Dal.dll.config
+D:\VBITProjects\MyHIS\Running\VNS.Dal.dll
+D:\VBITProjects\MyHIS\Running\VNS.Dal.pdb
+D:\VBITProjects\MyHIS\newdal\obj\Debug\newdal.csprojResolveAssemblyReference.cache
+D:\VBITProjects\MyHIS\newdal\obj\Debug\VNS.Dal.dll
+D:\VBITProjects\MyHIS\newdal\obj\Debug\VNS.Dal.pdb
+D:\Projects\MyHIS\Running\VNS.Dal.dll.config
+D:\Projects\MyHIS\Running\VNS.Dal.dll
+D:\Projects\MyHIS\Running\VNS.Dal.pdb
+D:\Projects\MyHIS\newdal\obj\Debug\VNS.Dal.dll
+D:\Projects\MyHIS\newdal\obj\Debug\VNS.Dal.pdb
+D:\Projects\MyHIS\newdal\obj\Debug\newdal.csprojResolveAssemblyReference.cache
+D:\Setup\MyLis\Running\LIS.DAL.dll.config
+D:\Setup\MyLis\Running\LIS.DAL.dll
+D:\Setup\MyLis\Running\LIS.DAL.pdb
+D:\Setup\MyLis\newdal\obj\Debug\LIS.DAL.dll
+D:\Setup\MyLis\newdal\obj\Debug\LIS.DAL.pdb

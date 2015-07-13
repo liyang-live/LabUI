@@ -1,0 +1,2 @@
+D:\Setup\MyLis\CIS2008_TV\LisSoft.UI\obj\Debug\LisSoft.UI.csprojResolveAssemblyReference.cache
+D:\Setup\MyLis\CIS2008_TV\LisSoft.UI\obj\Debug\LisSoft.UI.csproj.GenerateResource.Cache

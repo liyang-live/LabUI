@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Makhoathien>KKB</Makhoathien>
+  <ShowActiveControl>true</ShowActiveControl>
+  <CloseAfterPWDChange>true</CloseAfterPWDChange>
+  <Click>false</Click>
+  <TabDoubleClick2Close>true</TabDoubleClick2Close>
+  <CurrentOpenning>67</CurrentOpenning>
+  <OpenningList />
+  <AppName>HIS</AppName>
+  <TieuDe>PM QUẢN LÝ BỆNH NHÂN XÉT NGHIỆM MÃ VẠCH </TieuDe>
+  <MenuStype>1</MenuStype>
+  <UID>ADMIN</UID>
+  <PWD />
+  <REM>true</REM>
+  <GridView>false</GridView>
+  <AutoLogin>false</AutoLogin>
+  <AutoOpen>false</AutoOpen>
+  <AutoHideHeader>false</AutoHideHeader>
+  <OpenOnlyCurrent>false</OpenOnlyCurrent>
+  <_x0020_MenuFontName>Arial</_x0020_MenuFontName>
+  <_x0020_MenuFontsize>12</_x0020_MenuFontsize>
+  <_x0020_MenuFontstyle>Regular</_x0020_MenuFontstyle>
+</AppProperties>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MayInProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TudonginhoadonSaukhiThanhtoan>true</TudonginhoadonSaukhiThanhtoan>
+  <Kieuinhoadon>1</Kieuinhoadon>
+  <mauinhoadon>mau1</mauinhoadon>
+  <TieudeBienlaiBHYT>BIÊN LAI THU TIỀN ĐỐI TƯỢNG BHYT</TieudeBienlaiBHYT>
+  <Tieudehoadon>HÓA ĐƠN</Tieudehoadon>
+  <TieudephoiBHYT>BẢNG KÊ CHI PHÍ KCB NGOẠI TRÚ</TieudephoiBHYT>
+  <TieudeBienlaiDV>BIÊN LAI THU TIỀN ĐỐI TƯỢNG DỊCH VỤ</TieudeBienlaiDV>
+  <mauinbienlai>mau1</mauinbienlai>
+  <InCLSsaukhiluu>false</InCLSsaukhiluu>
+  <InDonthuocsaukhiluu>false</InDonthuocsaukhiluu>
+  <InHoadonSaukhithanhtoan_KCB>false</InHoadonSaukhithanhtoan_KCB>
+  <InPhieuKCBsaukhiluu>true</InPhieuKCBsaukhiluu>
+  <CoGiayInTomtatDieutriNgoaitru>A4</CoGiayInTomtatDieutriNgoaitru>
+  <CoGiayInBienlai>A4</CoGiayInBienlai>
+  <CoGiayInDonthuoc>A4</CoGiayInDonthuoc>
+  <CoGiayInCLS>A4</CoGiayInCLS>
+  <CoGiayInPhieuKCB>A4</CoGiayInPhieuKCB>
+  <TenMayInPhieuKCB />
+  <TenMayInHoadon />
+  <TenMayInBienlai>Foxit Reader PDF Printer</TenMayInBienlai>
+  <Tenmayincuoicung>Foxit Reader PDF Printer</Tenmayincuoicung>
+  <KieuInPhieuKCB>Innhiet</KieuInPhieuKCB>
+  <PreviewInTomtatDieutriNgoaitru>true</PreviewInTomtatDieutriNgoaitru>
+  <PreviewInPhoiBHYT>true</PreviewInPhoiBHYT>
+  <PreviewInHoadon>true</PreviewInHoadon>
+  <PreviewInBienlai>true</PreviewInBienlai>
+  <PreviewInDonthuoc>true</PreviewInDonthuoc>
+  <PreviewInCLS>true</PreviewInCLS>
+  <PreviewPhieuKCB>true</PreviewPhieuKCB>
+</MayInProperties>

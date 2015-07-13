@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_BAOCAO_XOA_KETQUA_CHITIET" targetNamespace="http://tempuri.org/ds_BAOCAO_XOA_KETQUA_CHITIET.xsd" xmlns:mstns="http://tempuri.org/ds_BAOCAO_XOA_KETQUA_CHITIET.xsd" xmlns="http://tempuri.org/ds_BAOCAO_XOA_KETQUA_CHITIET.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_BAOCAO_XOA_KETQUA_CHITIET" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_BAOCAO_XOA_KETQUA_CHITIET" msprop:Generator_UserDSName="ds_BAOCAO_XOA_KETQUA_CHITIET">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_BAOCAO_XOA_KETQUA_CHITIET" msprop:Generator_TableClassName="dt_BAOCAO_XOA_KETQUA_CHITIETDataTable" msprop:Generator_TableVarName="tabledt_BAOCAO_XOA_KETQUA_CHITIET" msprop:Generator_TablePropName="dt_BAOCAO_XOA_KETQUA_CHITIET" msprop:Generator_RowDeletingName="dt_BAOCAO_XOA_KETQUA_CHITIETRowDeleting" msprop:Generator_RowChangingName="dt_BAOCAO_XOA_KETQUA_CHITIETRowChanging" msprop:Generator_RowEvHandlerName="dt_BAOCAO_XOA_KETQUA_CHITIETRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_BAOCAO_XOA_KETQUA_CHITIETRowDeleted" msprop:Generator_UserTableName="dt_BAOCAO_XOA_KETQUA_CHITIET" msprop:Generator_RowChangedName="dt_BAOCAO_XOA_KETQUA_CHITIETRowChanged" msprop:Generator_RowEvArgName="dt_BAOCAO_XOA_KETQUA_CHITIETRowChangeEvent" msprop:Generator_RowClassName="dt_BAOCAO_XOA_KETQUA_CHITIETRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TestDetail_ID" msprop:Generator_ColumnVarNameInTable="columnTestDetail_ID" msprop:Generator_ColumnPropNameInRow="TestDetail_ID" msprop:Generator_ColumnPropNameInTable="TestDetail_IDColumn" msprop:Generator_UserColumnName="TestDetail_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_ID" msprop:Generator_ColumnVarNameInTable="columnTest_ID" msprop:Generator_ColumnPropNameInRow="Test_ID" msprop:Generator_ColumnPropNameInTable="Test_IDColumn" msprop:Generator_UserColumnName="Test_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Patient_ID" msprop:Generator_ColumnVarNameInTable="columnPatient_ID" msprop:Generator_ColumnPropNameInRow="Patient_ID" msprop:Generator_ColumnPropNameInTable="Patient_IDColumn" msprop:Generator_UserColumnName="Patient_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="TestType_ID" msprop:Generator_ColumnVarNameInTable="columnTestType_ID" msprop:Generator_ColumnPropNameInRow="TestType_ID" msprop:Generator_ColumnPropNameInTable="TestType_IDColumn" msprop:Generator_UserColumnName="TestType_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="User_Name" msprop:Generator_ColumnVarNameInTable="columnUser_Name" msprop:Generator_ColumnPropNameInRow="User_Name" msprop:Generator_ColumnPropNameInTable="User_NameColumn" msprop:Generator_UserColumnName="User_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Delete_Date" msprop:Generator_ColumnVarNameInTable="columnDelete_Date" msprop:Generator_ColumnPropNameInRow="Delete_Date" msprop:Generator_ColumnPropNameInTable="Delete_DateColumn" msprop:Generator_UserColumnName="Delete_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="TestType_Name" msprop:Generator_ColumnVarNameInTable="columnTestType_Name" msprop:Generator_ColumnPropNameInRow="TestType_Name" msprop:Generator_ColumnPropNameInTable="TestType_NameColumn" msprop:Generator_UserColumnName="TestType_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Barcode" msprop:Generator_ColumnVarNameInTable="columnBarcode" msprop:Generator_ColumnPropNameInRow="Barcode" msprop:Generator_ColumnPropNameInTable="BarcodeColumn" msprop:Generator_UserColumnName="Barcode" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Result" msprop:Generator_ColumnVarNameInTable="columnTest_Result" msprop:Generator_ColumnPropNameInRow="Test_Result" msprop:Generator_ColumnPropNameInTable="Test_ResultColumn" msprop:Generator_UserColumnName="Test_Result" type="xs:string" minOccurs="0" />
+              <xs:element name="Para_Name" msprop:Generator_ColumnVarNameInTable="columnPara_Name" msprop:Generator_ColumnPropNameInRow="Para_Name" msprop:Generator_ColumnPropNameInTable="Para_NameColumn" msprop:Generator_UserColumnName="Para_Name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,8 @@
+<Modules>
+  <Module PersistentId="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System" />
+  <Module PersistentId="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" ModuleId="System.Drawing" />
+  <Module PersistentId="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="E92F8F5C-3288-49AA-A3DF-2E17DE999E23" ModuleId="VietBaIT.HISLink.SystemManagement" />
+  <Module PersistentId="962DDBA4-DED7-4E97-A0DB-D4483187324F" ModuleId="VietBaIT.System.DataAccessLayer" />
+  <Module PersistentId="A13F4303-7652-44B8-96A2-4819F91469E2" ModuleId="VietBaIT.CoreApp" />
+</Modules>
